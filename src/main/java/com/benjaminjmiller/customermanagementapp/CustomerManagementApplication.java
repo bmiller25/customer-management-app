@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 @SpringBootApplication
+@ImportResource("file:services.xml")
 public class CustomerManagementApplication {
 
 	public static void main(String[] args) {

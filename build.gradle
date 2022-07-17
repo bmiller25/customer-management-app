@@ -14,9 +14,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.hibernate.orm:hibernate-core:6.1.1.Final'
+	implementation 'org.hibernate:hibernate:3.5.4-Final'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.hibernate.orm:hibernate-testing'
 }
 
 tasks.named('test') {
