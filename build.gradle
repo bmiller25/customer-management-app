@@ -6,15 +6,23 @@ plugins {
 
 group = 'com.benjaminjmiller'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
+	implementation 'org.hibernate.orm:hibernate-core:6.1.1.Final'
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.hibernate:hibernate:3.5.4-Final'
+	implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
+	implementation 'jakarta.xml.bind:jakarta.xml.bind-api:3.0.1'
+	implementation 'org.glassfish.jaxb:jaxb-runtime:3.0.2'
+	implementation 'jakarta.activation:jakarta.activation-api:2.1.0'
+	implementation 'jakarta.transaction:jakarta.transaction-api:2.0.0'
+	implementation 'mysql:mysql-connector-java:8.0.29'
+	implementation 'com.h2database:h2:2.1.214'
+	testImplementation 'org.hibernate.orm:hibernate-testing:6.1.1.Final'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
