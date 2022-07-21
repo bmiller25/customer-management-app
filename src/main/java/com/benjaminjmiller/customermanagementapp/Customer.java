@@ -1,6 +1,9 @@
 package com.benjaminjmiller.customermanagementapp;
 
-public class Customer {
+/**
+ * The Customer entity class represents the customer table.
+ */
+public final class Customer {
 
     Long id;
     String firstName;
@@ -19,6 +22,20 @@ public class Customer {
 
     }
 
+    public Customer(String firstName, String lastName, String gender, String address, String phoneNumber, String nameOnCreditCard, String creditCardNumber, String expirationDate, String csc, Boolean rewardsMember, Long rewardsPoints) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setGender(gender);
+        setAddress(address);
+        setPhoneNumber(phoneNumber);
+        setNameOnCreditCard(nameOnCreditCard);
+        setCreditCardNumber(creditCardNumber);
+        setExpirationDate(expirationDate);
+        setCsc(csc);
+        setRewardsMember(rewardsMember);
+        setRewardsPoints(rewardsPoints);
+    }
+
     public Long getId() {
         return id;
     }
@@ -32,6 +49,9 @@ public class Customer {
     }
 
     public void setFirstName(String firstName) {
+        if (firstName != null && firstName.equals("")) {
+            firstName = null;
+        }
         this.firstName = firstName;
     }
 
@@ -40,6 +60,9 @@ public class Customer {
     }
 
     public void setLastName(String lastName) {
+        if (lastName != null && lastName.equals("")) {
+            lastName = null;
+        }
         this.lastName = lastName;
     }
 
@@ -48,6 +71,9 @@ public class Customer {
     }
 
     public void setGender(String gender) {
+        if (gender != null && gender.equals("")) {
+            gender = null;
+        }
         this.gender = gender;
     }
 
@@ -56,6 +82,9 @@ public class Customer {
     }
 
     public void setAddress(String address) {
+        if (address != null && address.equals("")) {
+            address = null;
+        }
         this.address = address;
     }
 
@@ -64,6 +93,9 @@ public class Customer {
     }
 
     public void setPhoneNumber(String phoneNumber) {
+        if (phoneNumber != null && phoneNumber.equals("")) {
+            phoneNumber = null;
+        }
         this.phoneNumber = phoneNumber;
     }
 
@@ -72,6 +104,9 @@ public class Customer {
     }
 
     public void setNameOnCreditCard(String nameOnCreditCard) {
+        if (nameOnCreditCard != null && nameOnCreditCard.equals("")) {
+            nameOnCreditCard = null;
+        }
         this.nameOnCreditCard = nameOnCreditCard;
     }
 
@@ -80,6 +115,9 @@ public class Customer {
     }
 
     public void setCreditCardNumber(String creditCardNumber) {
+        if (creditCardNumber != null && creditCardNumber.equals("")) {
+            creditCardNumber = null;
+        }
         this.creditCardNumber = creditCardNumber;
     }
 
@@ -88,6 +126,9 @@ public class Customer {
     }
 
     public void setExpirationDate(String expirationDate) {
+        if (expirationDate != null && expirationDate.equals("")) {
+            expirationDate = null;
+        }
         this.expirationDate = expirationDate;
     }
 
@@ -96,6 +137,9 @@ public class Customer {
     }
 
     public void setCsc(String csc) {
+        if (csc != null && csc.equals("")) {
+            csc = null;
+        }
         this.csc = csc;
     }
 
@@ -114,4 +158,5 @@ public class Customer {
     public void setRewardsPoints(Long rewardsPoints) {
         this.rewardsPoints = rewardsPoints;
     }
+
 }

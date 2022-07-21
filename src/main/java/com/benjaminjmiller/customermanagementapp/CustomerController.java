@@ -9,42 +9,82 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.util.List;
 
+/**
+ * The CustomerController links the model and the view. It is used to get or update data in the
+ * Customer model.
+ */
 public class CustomerController {
 
-    public CustomerController() {
-    }
+    private Session session;
 
-    public static String getFirstName() {
+    public CustomerController() {
+        // A session is initialized only once when the controller is constructed.
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure() // configures settings from hibernate.cfg.xml
+                .configure()
                 .build();
         SessionFactory sessionFactory = null;
         try {
             MetadataSources metadataSources = new MetadataSources( registry );
-            System.out.println("DEBUG: CREATED METADATASOURCES");
             Metadata metadata = metadataSources.buildMetadata();
-            System.out.println("DEBUG: BUILT METADATASOURCES");
             sessionFactory = metadata.buildSessionFactory();
-            System.out.println("DEBUG: BUILT SESSION FACTORY");
         } catch (Exception e) {
-            // The registry would be destroyed by the SessionFactory, but we had trouble building the SessionFactory
-            // so destroy it manually.
             StandardServiceRegistryBuilder.destroy( registry );
-            System.out.println(e.getClass());
-            System.out.println(e.getMessage());
-            return null;
+            return;
         }
-        Session session = sessionFactory.openSession();
+        session = sessionFactory.openSession();
+    }
+
+    // Adds a customer to the DB
+    public void addCustomer(String firstName, String lastName, String gender, String address, String phoneNumber,
+                            String nameOnCreditCard, String creditCardNumber, String expirationDate, String csc,
+                            boolean isRewardsMember, long rewardsPoints) {
+        Customer customer = new Customer(firstName, lastName, gender, address, phoneNumber, nameOnCreditCard,
+                                         creditCardNumber, expirationDate, csc, isRewardsMember, rewardsPoints);
+
+        session.beginTransaction();
+        session.persist(customer);
+        session.getTransaction().commit();
+    }
+
+    // Adds multiple customers to the DB
+    public void addCustomers(List<Customer> customers) {
+        session.beginTransaction();
+        for (Customer customer : customers) {
+            session.persist(customer);
+        }
+        session.getTransaction().commit();
+    }
+
+    // Deletes the customer with the given ID from the DB
+    public void deleteCustomer(long id) {
+        session.beginTransaction();
+        Customer customer = new Customer();
+        customer.setId(id);
+        session.remove(customer);
+        session.getTransaction().commit();
+    }
+
+    // Updates the data in the DB for the given customer
+    public void updateCustomer(Customer customer) {
+        session.beginTransaction();
+        session.merge(customer);
+        session.getTransaction().commit();
+    }
+
+    // Returns the Customer with the given ID
+    public Customer getCustomer(long id) {
+        session.beginTransaction();
+        Customer result = session.get(Customer.class, id);
+        session.getTransaction().commit();
+        return result;
+    }
+
+    // Returns all the customers in the DB
+    public List<Customer> getCustomers() {
         session.beginTransaction();
         List result = session.createQuery("from Customer").list();
-        for (Object o : result) {
-            Customer customer = (Customer) o;
-            session.getTransaction().commit();
-            session.close();
-            return customer.getFirstName();
-        }
-
-        return null;
+        session.getTransaction().commit();
+        return result;
     }
 
 }
