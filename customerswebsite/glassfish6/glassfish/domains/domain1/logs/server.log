@@ -15869,3 +15869,360 @@ java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
 [2022-07-21T11:34:28.349-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=452 _ThreadName=admin-listener(10)] [timeMillis: 1658428468349] [levelValue: 800] [[
   customerswebsite-1.0-SNAPSHOT was successfully deployed in 280 milliseconds.]]
 
+[2022-07-21T13:04:45.189-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658433885189] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:04:45.220-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658433885220] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:04:45.236-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658433885236] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:04:45.330-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658433885330] [levelValue: 800] [[
+  Loading application [customerswebsite-1.0-SNAPSHOT] at [/customerswebsite-1.0-SNAPSHOT]]]
+
+[2022-07-21T13:04:45.355-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658433885355] [levelValue: 800] [[
+  customerswebsite-1.0-SNAPSHOT was successfully deployed in 260 milliseconds.]]
+
+[2022-07-21T13:06:46.270-0700] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1658434006270] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-11.0.15.1\bin\java.exe
+-cp
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+-Xbootclasspath/a:C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish/lib/grizzly-npn-api.jar
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+-javaagent:C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Dcom.sun.aas.instanceRoot=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish
+-Djava.library.path=C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/lib;C:/Program Files/Java/jdk-11.0.15.1/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Program Files/Common Files/Oracle/Java/javapath;C:/src/depot_tools;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/OpenSSH;C:/Program Files/Microsoft SQL Server/150/Tools/Binn;C:/ProgramData/chocolatey/bin;C:/Program Files/Git/cmd;C:/Gradle/gradle-7.5/bin;C:/Program Files/MySQL/MySQL Shell 8.0/bin;C:/Users/benja/AppData/Local/Microsoft/WindowsApps;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin;C:/Users/benja/AppData/Local/Android/Sdk/platform-tools;C:/Users/benja/.dotnet/tools;C:/Users/benja/AppData/Local/Coursier/data/bin;C:/Users/benja/AppData/Local/Programs/Microsoft VS Code/bin;C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+true
+-asadmin-classpath
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/modules/admin-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2022-07-21T13:07:15.679-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=809 _ThreadName=Thread-44] [timeMillis: 1658434035679] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2022-07-21T13:07:15.689-0700] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00028] [jakarta.enterprise.bootstrap] [tid: _ThreadID=809 _ThreadName=Thread-44] [timeMillis: 1658434035689] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@7a231dfd from service registry.]]
+
+[2022-07-21T13:07:15.689-0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=809 _ThreadName=Thread-7] [timeMillis: 1658434035689] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2022-07-21T13:07:15.695-0700] [glassfish 6.2] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=809 _ThreadName=Thread-44] [timeMillis: 1658434035695] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2022-07-21T13:07:15.695-0700] [glassfish 6.2] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=809 _ThreadName=Thread-44] [timeMillis: 1658434035695] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2022-07-21T13:07:15.759-0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=814 _ThreadName=RunLevelControllerThread-1658434035711] [timeMillis: 1658434035759] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@645be09e]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@26ec6ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2022-07-21T13:07:15.759-0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=814 _ThreadName=RunLevelControllerThread-1658434035711] [timeMillis: 1658434035759] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@645be09e]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@26ec6ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2022-07-21T13:07:15.759-0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=814 _ThreadName=RunLevelControllerThread-1658434035711] [timeMillis: 1658434035759] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@645be09e]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@26ec6ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2022-07-21T13:07:15.759-0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=814 _ThreadName=RunLevelControllerThread-1658434035711] [timeMillis: 1658434035759] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@645be09e]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@26ec6ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2022-07-21T13:07:15.759-0700] [glassfish 6.2] [SEVERE] [] [jakarta.enterprise.web.util] [tid: _ThreadID=814 _ThreadName=RunLevelControllerThread-1658434035711] [timeMillis: 1658434035759] [levelValue: 1000] [[
+  The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@645be09e]) and a value of type [org.glassfish.admingui.theme.AdminguiThemeContext] (value [org.glassfish.admingui.theme.AdminguiThemeContext@26ec6ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2022-07-21T13:07:15.837-0700] [glassfish 6.2] [INFO] [] [] [tid: _ThreadID=813 _ThreadName=Thread-7] [timeMillis: 1658434035837] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2022-07-21T13:07:23.201-0700] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1658434043201] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-11.0.15.1\bin\java.exe
+-cp
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+-Xbootclasspath/a:C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish/lib/grizzly-npn-api.jar
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+-javaagent:C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Dcom.sun.aas.instanceRoot=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish
+-Djava.library.path=C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/lib;C:/Program Files/Java/jdk-11.0.15.1/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Program Files/Common Files/Oracle/Java/javapath;C:/src/depot_tools;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/OpenSSH;C:/Program Files/Microsoft SQL Server/150/Tools/Binn;C:/ProgramData/chocolatey/bin;C:/Program Files/Git/cmd;C:/Gradle/gradle-7.5/bin;C:/Program Files/MySQL/MySQL Shell 8.0/bin;C:/Users/benja/AppData/Local/Microsoft/WindowsApps;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin;C:/Users/benja/AppData/Local/Android/Sdk/platform-tools;C:/Users/benja/.dotnet/tools;C:/Users/benja/AppData/Local/Coursier/data/bin;C:/Users/benja/AppData/Local/Programs/Microsoft VS Code/bin;C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\benja\OneDrive\Desktop\Customer Management App\customer-management-app\customerswebsite\glassfish6\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+true
+-asadmin-classpath
+C:/Users/benja/OneDrive/Desktop/Customer Management App/customer-management-app/customerswebsite/glassfish6/glassfish/modules/admin-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2022-07-21T13:07:26.671-0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00009] [jakarta.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434046671] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish  6.2.5  (build 6.x-b66-g0159b68 2022-02-12T17:39:59+0000)]]
+
+[2022-07-21T13:07:26.687-0700] [glassfish 6.2] [INFO] [NCLS-LOGGING-00010] [jakarta.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434046687] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2022-07-21T13:07:26.984-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434046984] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2022-07-21T13:07:26.984-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434046984] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2022-07-21T13:07:27.007-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047007] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2022-07-21T13:07:27.110-0700] [glassfish 6.2] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047110] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2022-07-21T13:07:27.220-0700] [glassfish 6.2] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047220] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2022-07-21T13:07:27.378-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047378] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 31ms - bound to [/0.0.0.0:8080]]]
+
+[2022-07-21T13:07:27.409-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047409] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:8181]]]
+
+[2022-07-21T13:07:27.425-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047425] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:4848]]]
+
+[2022-07-21T13:07:27.487-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047487] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:3700]]]
+
+[2022-07-21T13:07:27.550-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434047550] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:28.128-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048128] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2022-07-21T13:07:28.128-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048128] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2022-07-21T13:07:28.128-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048128] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2022-07-21T13:07:28.175-0700] [glassfish 6.2] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048175] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2022-07-21T13:07:28.426-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048426] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2022-07-21T13:07:28.441-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048441] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2022-07-21T13:07:28.457-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048457] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2022-07-21T13:07:28.488-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048488] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2022-07-21T13:07:28.504-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048504] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2022-07-21T13:07:28.724-0700] [glassfish 6.2] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048724] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2022-07-21T13:07:28.724-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434048724] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2022-07-21T13:07:29.227-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434049227] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:29.258-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434049258] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:29.493-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434049493] [levelValue: 800] [[
+  Loading application [customerswebsite-1.0-SNAPSHOT] at [/customerswebsite-1.0-SNAPSHOT]]]
+
+[2022-07-21T13:07:29.509-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434049509] [levelValue: 800] [[
+  Loading application customerswebsite-1.0-SNAPSHOT done in 2,253 ms]]
+
+[2022-07-21T13:07:29.511-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1658434049511] [levelValue: 800] [[
+  Eclipse GlassFish  6.2.5  (6.x-b66-g0159b68 2022-02-12T17:39:59+0000) startup time : Felix (2,892ms), startup services(3,044ms), total(5,936ms)]]
+
+[2022-07-21T13:07:29.588-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1658434046483] [timeMillis: 1658434049588] [levelValue: 800] [[
+  Grizzly Framework 3.0.1 started in: 0ms - bound to [/0.0.0.0:7676]]]
+
+[2022-07-21T13:07:29.776-0700] [glassfish 6.2] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=78 _ThreadName=Thread-14] [timeMillis: 1658434049776] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://host.docker.internal:8686/jndi/rmi://host.docker.internal:8686/jmxrmi]]
+
+[2022-07-21T13:07:30.782-0700] [glassfish 6.2] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=53 _ThreadName=admin-listener(2)] [timeMillis: 1658434050782] [levelValue: 800] [[
+  HV000001: Hibernate Validator 7.0.2.Final]]
+
+[2022-07-21T13:07:32.006-0700] [glassfish 6.2] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-listener(2)] [timeMillis: 1658434052006] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2022-07-21T13:07:32.163-0700] [glassfish 6.2] [INFO] [NCLS-BOOTSTRAP-00027] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1658434052163] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@3971f0fe as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@23940f86.]]
+
+[2022-07-21T13:07:32.367-0700] [glassfish 6.2] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=23 _ThreadName=FelixStartLevel] [timeMillis: 1658434052367] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2022-07-21T13:07:32.445-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434052445] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:32.726-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434052726] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:32.747-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434052747] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:32.748-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434052748] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:07:33.747-0700] [glassfish 6.2] [INFO] [jsf.config.listener.version] [jakarta.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434053747] [levelValue: 800] [[
+  Initializing Mojarra 3.0.1 for context '']]
+
+[2022-07-21T13:07:34.626-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434054626] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2022-07-21T13:07:34.642-0700] [glassfish 6.2] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=98 _ThreadName=Thread-16] [timeMillis: 1658434054642] [levelValue: 800] [[
+  Loading application __admingui done in 2,495 ms]]
+
+[2022-07-21T13:13:12.122-0700] [glassfish 6.2] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658434392122] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2022-07-21T13:13:13.220-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658434393220] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:13:13.257-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658434393257] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:13:13.269-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658434393269] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:13:13.406-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658434393406] [levelValue: 800] [[
+  Loading application [customerswebsite-1.0-SNAPSHOT] at [/customerswebsite-1.0-SNAPSHOT]]]
+
+[2022-07-21T13:13:13.475-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=56 _ThreadName=admin-listener(5)] [timeMillis: 1658434393475] [levelValue: 800] [[
+  customerswebsite-1.0-SNAPSHOT was successfully deployed in 365 milliseconds.]]
+
+[2022-07-21T13:20:04.908-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(4)] [timeMillis: 1658434804908] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:20:04.940-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(4)] [timeMillis: 1658434804940] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:20:04.940-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=55 _ThreadName=admin-listener(4)] [timeMillis: 1658434804940] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:20:05.051-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(4)] [timeMillis: 1658434805051] [levelValue: 800] [[
+  Loading application [customerswebsite-1.0-SNAPSHOT] at [/customerswebsite-1.0-SNAPSHOT]]]
+
+[2022-07-21T13:20:05.075-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(4)] [timeMillis: 1658434805075] [levelValue: 800] [[
+  customerswebsite-1.0-SNAPSHOT was successfully deployed in 244 milliseconds.]]
+
+[2022-07-21T13:45:04.403-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658436304403] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:45:04.419-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658436304419] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:45:04.434-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658436304434] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2022-07-21T13:45:04.544-0700] [glassfish 6.2] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658436304544] [levelValue: 800] [[
+  Loading application [customerswebsite-1.0-SNAPSHOT] at [/customerswebsite-1.0-SNAPSHOT]]]
+
+[2022-07-21T13:45:04.591-0700] [glassfish 6.2] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-listener(1)] [timeMillis: 1658436304591] [levelValue: 800] [[
+  customerswebsite-1.0-SNAPSHOT was successfully deployed in 251 milliseconds.]]
+

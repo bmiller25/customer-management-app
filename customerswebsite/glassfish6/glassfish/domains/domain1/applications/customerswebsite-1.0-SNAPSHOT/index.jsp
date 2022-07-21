@@ -1,11 +1,12 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.io.*" %>
+<%@ page import="java.io.BufferedReader" %>
+<%@ page import="com.benjaminjmiller.customerswebsite.DataRetriever" %>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Customer Management</title>
-        <link href="cool.jsp" rel="stylesheet">
+        <link href="style.jsp" rel="stylesheet">
     </head>
     <body>
         <h1>Customers</h1>
@@ -17,15 +18,7 @@
                 <th>Rewards Points</th>
             </tr>
             <%
-            Process process = Runtime.getRuntime().exec("java -jar customer-management-app-1.0-SNAPSHOT.jar export all customers.csv");
-            try {
-                process.waitFor();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            File file = new File("customers.csv");
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            BufferedReader bufferedReader = DataRetriever.getCustomerData();
             String line = bufferedReader.readLine();
             while (line != null) {
                 String[] parts = line.split(",");

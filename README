@@ -1,0 +1,27 @@
+# Setting up the MySQL Server
+
+# Compiling and running the Customer Management Application
+
+To compile the application, in the customer-management-app directory, run
+the following command:
+
+gradlew bootJar
+
+This will produce a JAR in the directory build\libs.
+
+To run the application, run the following command:
+
+java -jar build\libs\customer-management-app-1.0-SNAPSHOT.jar
+
+# Compiling and running the JSP website
+
+Go to the customerswebsite directory:
+
+cd customerswebsite
+
+To compile the application, run the following command:
+
+gradlew war
+
+This will produce a WAR in the directory build\libs.
+
