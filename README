@@ -1,6 +1,15 @@
 # Setting up the MySQL Server
 
+
+
 # Compiling and running the Customer Management Application
+
+To run the tests for the Customer Management Application, in the
+customer-management-app directory, run the following command:
+
+gradlew test
+
+Open build\reports\tests\test\index.html to view the test report.
 
 To compile the application, in the customer-management-app directory, run
 the following command:
@@ -25,3 +34,20 @@ gradlew war
 
 This will produce a WAR in the directory build\libs.
 
+To start the GlassFish server, run the following command:
+
+glassfish6\glassfish\bin\startserv
+
+The server will start.
+
+Now, open a new Terminal, and cd to the customerswebsite directory
+
+cd customerswebsite
+
+You must now deploy the WAR file that was compiled earlier
+
+Run the following command:
+
+glassfish6\glassfish\bin\asadmin deploy build\libs\customerswebsite-1.0-SNAPSHOT.war
+
+Now, you can go to localhost:8080/customerswebsite-1.0-SNAPSHOT/
