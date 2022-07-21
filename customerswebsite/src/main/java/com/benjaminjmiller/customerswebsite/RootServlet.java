@@ -22,5 +22,4 @@ public class RootServlet extends HttpServlet {
     public void destroy() {
     }
 
-
 }

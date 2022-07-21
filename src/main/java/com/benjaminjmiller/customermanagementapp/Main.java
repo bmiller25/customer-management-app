@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ImportResource("file:services.xml")
+@ImportResource("classpath:services.xml")
 public class Main {
 
     public static void main(String[] args) {
