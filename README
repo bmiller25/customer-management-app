@@ -1,6 +1,14 @@
 # Setting up the MySQL Server
 
+Install the MySQL Server
+Make sure to install the ODBC driver, J/Connector and MySQL Shell
+Set the database user name to "root" and the password to "password"
 
+Create a database named "customerdata"
+
+In the customer-management-app directory, run the following command:
+
+mysqlsh -h localhost -u root -p password -f create-customer-table.sql
 
 # Compiling and running the Customer Management Application
 
