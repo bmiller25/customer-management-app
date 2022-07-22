@@ -1,3 +1,9 @@
+# Customer Management Application 1.0
+
+This project contains a CLI customer management application along with
+a JSP server. Please follow the instructions below to see how to
+run tests, compile, run the programs, etc.
+
 # Setting up the MySQL Server
 
 Install the MySQL Server
